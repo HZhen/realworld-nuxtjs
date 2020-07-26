@@ -44,7 +44,12 @@
 
 <script>
 import { login,register } from '@/api/user'
+
+// 仅在客户端加载 js-cookie包
+const Cookie = process.client ? require('js-cookie') : undefined
+
 export default {
+  middleware: 'notAuthenticated',
   name: 'LoginIndex',
   computed: {
     isLogin () {
@@ -72,8 +77,12 @@ export default {
         : await register({
           user: this.user
         })
-        console.log(data)
+        // console.log(data)
         // TODO: 保存用户的登录状态
+        this.$store.commit('setUser', data.user)
+
+        // 为了防止刷新页面数据丢失，我们需要把数据持久化
+        Cookie.set('user', data.user)
 
         // 跳转到首页
         this.$router.push('/')

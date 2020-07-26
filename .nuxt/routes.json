@@ -1,0 +1,51 @@
+[
+  {
+    "path": "/",
+    "component": "E:\\\\GitHub-project\\\\realworld-nuxtjs\\\\pages\\\\layout",
+    "children": [
+      {
+        "path": "",
+        "name": "home",
+        "component": "E:\\\\GitHub-project\\\\realworld-nuxtjs\\\\pages\\\\home",
+        "_name": "_06781484"
+      },
+      {
+        "path": "/login",
+        "name": "login",
+        "component": "E:\\\\GitHub-project\\\\realworld-nuxtjs\\\\pages\\\\login",
+        "_name": "_6e7a7738"
+      },
+      {
+        "path": "/register",
+        "name": "register",
+        "component": "E:\\\\GitHub-project\\\\realworld-nuxtjs\\\\pages\\\\login",
+        "_name": "_6e7a7738"
+      },
+      {
+        "path": "/profile/:username",
+        "name": "profile",
+        "component": "E:\\\\GitHub-project\\\\realworld-nuxtjs\\\\pages\\\\profile",
+        "_name": "_7c4a0be4"
+      },
+      {
+        "path": "/settings",
+        "name": "settings",
+        "component": "E:\\\\GitHub-project\\\\realworld-nuxtjs\\\\pages\\\\settings",
+        "_name": "_c390fd70"
+      },
+      {
+        "path": "/editor",
+        "name": "editor",
+        "component": "E:\\\\GitHub-project\\\\realworld-nuxtjs\\\\pages\\\\editor",
+        "_name": "_4309ebd2"
+      },
+      {
+        "path": "/article/:slug",
+        "name": "article",
+        "component": "E:\\\\GitHub-project\\\\realworld-nuxtjs\\\\pages\\\\article",
+        "_name": "_63144f31"
+      }
+    ],
+    "_name": "_4ed8c58f"
+  }
+]
